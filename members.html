@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borgaon Panchayat</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/members.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <!-- Google Translator -->
+    <div class="google-translator">
+      <div id="google_translate_element"></div>
+    </div>
+
+   
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            महाराष्ट्र शासन | GOVERNMENT OF MAHARASHTRA
+          </div>
+          <div class="col-md-6 text-end">
+            <i class="fas fa-envelope"></i><a href="mailto:borgaon183740@gmail.com">borgaon183740@gmail.com</a> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo Header -->
+<div class="logo-header py-3 d-flex justify-content-between align-items-center px-4">
+  <div class="logo-container d-flex align-items-center">
+    <img src="img/main_logo.png" alt="ग्रामपंचायत लोगो" class="logo me-3" />
+    <div class="logo-text">
+      
+      
+    </div>
+  </div>
+  <div class="contact-short d-none d-md-block text-end">
+    
+  </div>
+</div>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bar">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                ><i class="fas fa-home"></i> मुखपृष्ठ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="members.html"
+                ><i class="fas fa-users"></i> पदाधिकारी</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="villageinfo.html"
+                ><i class="fas fa-info-circle"></i> गावाची माहिती</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="impnumbers.html"
+                ><i class="fas fa-phone-alt"></i> महत्वाचे नंबर</a
+              >
+            </li>
+            <!--  Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="yojna.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                onclick="window.location=this.getAttribute('href');"
+              >
+                <i class="fas fa-project-diagram"></i> शासकीय योजना
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-custom"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="yojna.html"
+                    >१५ वित्त आयोग</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="jaljeevan.html"
+                    >जल जीवन मिशन</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="pmawas.html"
+                    >प्रधान मंत्री आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="nrega.html"
+                    >महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार हमी योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="tanda_vasti.html"
+                    >तांडा/वस्ती योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="sc_st_development.html"
+                    >अनुसूचीत जाती व नवबौध्द विकास</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="ramaiawas.html"
+                    >रमाई आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="shabriawas.html"
+                    >शबरी आदिवासी घरकुल योजना</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- लाभार्थी रजिस्टर Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="beneficiaryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user-check"></i> लाभार्थी रजिस्टर
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-custom"
+                aria-labelledby="beneficiaryDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="pm_awas.html"
+                    >प्रधानमंत्री आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="shabri_awas.html"
+                    >शबरी आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="ramai_awas.html"
+                    >रमाई आवास योजना</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services-for-citizens.html"
+                ><i class="fas fa-user-check"></i> नागरिकांसाठी सेवा</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="tax-collection.html"
+                ><i class="fas fa-money-bill-wave"></i> कर संकलन</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="complain-us.html"
+                ><i class="fas fa-comments"></i> तक्रार द्या</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <div class="container">
+        <marquee behavior="scroll" direction="left">
+          <i class="fas fa-bullhorn"></i> ग्रामपंचायत मध्ये स्वच्छता अभियान चालू
+          आहे. सर्व नागरिकांनी सहभागी व्हावे.
+        </marquee>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <!-- Notification -->
+      <div class="notification">
+     <!-- HTML -->
+<hi><i class="fas fa-exclamation-circle red-icon"></i></hi>
+
+        <strong>महत्वाची सूचना :</strong> नवीन जन्म नोंदणी प्रक्रिया ऑनलाईन सुरू
+        झाली आहे.
+      </div>
+
+
+      <!-- Main Content -->
+      <div class="container mt-4">
+        <h2 class="section-title text-center">पदाधिकारी</h2>
+        <div class="row">
+          <!-- 1 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/sarpanch.jpeg"
+                  alt="सरपंच"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">श्री. अशोक उत्तम गवळी</h5>
+                <p class="text-muted mb-2">सरपंच</p>
+                <p>
+                  <i class="fas fa-phone text-success"></i > <a href="tel:+917350937991">7350937991</a>/<a href="tel:+919404208217">9404208217</a>
+                  9404208217
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/upsarpanch.jpeg"
+                  alt="उपसरपंच"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">श्री. हिरामण किसन भोये</h5>
+                <p class="text-muted mb-2">उपसरपंच</p>
+                <p><i class="fas fa-phone text-success"></i> <a href="tel:+919423548925">9423548925</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/officer1.jpeg"
+                  alt="ग्रामपंचायत अधिकारी"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">श्री. सुकदेव दगा बागुल</h5>
+                <p class="text-muted mb-2">ग्रामपंचायत अधिकारी</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+91 9022702596">9022702596</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/member4.jpg"
+                  alt="सदस्य"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">संदिप मोहन भोये</h5>
+                <p class="text-muted mb-2">सदस्य</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+919011115752">9011115752</a> </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/hiraman.jpeg"
+                  alt="सदस्य / संगणक परिचालक"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">हिरामण कमलाकर हाडस</h5>
+                <p class="text-muted mb-2">सदस्य / संगणक परिचालक</p>
+                <p><i class="fas fa-phone text-success"></i> <a href="tel:+919359153998">9359153998</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/priya.jpeg"
+                  alt="सदस्य"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">प्रिया विकास भोये</h5>
+                <p class="text-muted mb-2">सदस्य</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+919370791282">9370791282</a> </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/hira.jpeg"
+                  alt="सदस्य"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">
+                  हिराबाई शिवाजी गांगुर्डे
+                </h5>
+                <p class="text-muted mb-2">सदस्य</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+917887467705">7887467705</a> </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/pushpa.jpeg"
+                  alt="सदस्य"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">पुष्पा विलास मोरे</h5>
+                <p class="text-muted mb-2">सदस्य</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+918999791839">8999791839</a> </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/member9.jpg"
+                  alt="सदस्य"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">वामन यशवंत गवळी</h5>
+                <p class="text-muted mb-2">सदस्य</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+919421852312">9421852312</a> </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/member10.jpg"
+                  alt="सदस्य"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">भाग्यश्री भास्कर भोये</h5>
+                <p class="text-muted mb-2">सदस्य</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+919423804428">9423804428</a> </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/member11.jpg"
+                  alt="सदस्य"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">संगीता सोमनाथ गवळी</h5>
+                <p class="text-muted mb-2">सदस्य</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+919307694016">9307694016</a> </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/ramesh.jpeg"
+                  alt="सदस्य"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">रमेश पांडुरंग पवार</h5>
+                <p class="text-muted mb-2">सदस्य</p>
+                <p><i class="fas fa-phone text-success"></i> <a href="tel:+917447216333">7447216333</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 13 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/member13.jpg"
+                  alt="सदस्य"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">रमेश शांताराम मोरे</h5>
+                <p class="text-muted mb-2">सदस्य</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+919834008169">9834008169</a> </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 14 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/shusila.jpeg"
+                  alt="सदस्य"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">सुशिला पांडुरंग भोये</h5>
+                <p class="text-muted mb-2">सदस्य</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+919420002283">9420002283</a> </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 15 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/vijay.jpeg"
+                  alt="लिपिक"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">श्री. विजय चंदर भोये</h5>
+                <p class="text-muted mb-2">लिपिक</p>
+                <p><i class="fas fa-phone text-success"></i> <a href="tel:+919405355991">9405355991</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 16 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/member16.jpg"
+                  alt="शिपाई"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">श्री. कैलास हरी गायकवाड</h5>
+                <p class="text-muted mb-2">शिपाई</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+917218953286">7218953286</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 17 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/member17.jpg"
+                  alt="सफाई कामगार"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">
+                  श्री. पांडुरंग राजु गांगुर्डे
+                </h5>
+                <p class="text-muted mb-2">सफाई कामगार</p>
+                <p><i class="fas fa-phone text-success"></i> --</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 18 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+              <div class="card-body">
+                <img
+                  src="img/member18.jpeg"
+                  alt="ग्राम रोजगार सहाय्यक"
+                  style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                  class="mb-3"
+                />
+                <h5 class="card-title fw-bold mb-1">श्री. हेमंत दत्तु भोये</h5>
+                <p class="text-muted mb-2">ग्राम रोजगार सहाय्यक</p>
+                <p><i class="fas fa-phone text-success"></i><a href="tel:+919404806683">9404806683</a> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+    <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- About Section -->
+      <div class="col-md-4 mb-4">
+        <h5>ग्रामपंचायतीची माहिती</h5>
+        <p>
+          नाव: बोरगाव <br>
+          स्थापना: 02 ऑक्टोबर 1959 <br>
+          Email: borgaon183740@gmail.com <br>
+          सेन्सस कोड: 549697 <br>
+          तालुका पासून अंतर: 18 कि.मी. <br>
+          जिल्हा मुख्यालयापासून अंतर: 82 कि.मी.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5>द्रुत लिंक</h5>
+        <div class="quick-links">
+          <a href="index.html"><i class="fas fa-angle-right"></i> मुख्य पृष्ठ</a>
+          <a href="#"><i class="fas fa-angle-right"></i> ग्रामपंचायती विषयी</a>
+          <a href="#"><i class="fas fa-angle-right"></i> आर्थिक माहिती</a>
+          <a href="#"><i class="fas fa-angle-right"></i> योजना व कामे</a>
+          <a href="#"><i class="fas fa-angle-right"></i> ऑनलाइन सेवा</a>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4">
+        <h5>संपर्क</h5>
+        <p><i class="fas fa-map-marker-alt"></i> ग्रामपंचायत बोरगाव, ता. सुरगाणा, जि. नाशिक, पिन: 422211</p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:borgaon183740@gmail.com">borgaon183740@gmail.com</a></p>
+        <p><i class="fas fa-phone-alt"></i><a href="tel:+91 9022702596">9022702596</a></p>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <!-- Copyright -->
+    <div class="row">
+        <div class="col text-center">
+         <p class="mb-0">
+      © 2025 बोरगाव ग्रामपंचायत. सर्व हक्क राखीव. <br>
+      Design & Developed by 
+      <a href="https://kumiradiinfotech.com/">KUMIRADI INFOTECH</a>.
+    </p>
+    <!-- Horizontal line below the link -->
+    <hr style="border: 1px solid rgba(255, 255, 255, 0.3); width: 80%; margin: 10px auto;">
+  </div>
+</div>
+
+  </div>
+</footer>
+
+      <!-- GIGW Compliance Button -->
+      <div class="gigw-compliance" id="gigwButton">
+        <i class="fas fa-universal-access"></i>
+      </div>
+
+      <!-- Accessibility Panel -->
+      <div class="accessibility-panel" id="accessibilityPanel">
+        <button id="increaseText">
+          <i class="fas fa-text-height"></i> Increase Text Size
+        </button>
+        <button id="decreaseText">
+          <i class="fas fa-text-height"></i> Decrease Text Size
+        </button>
+        <button id="resetText">
+          <i class="fas fa-undo"></i> Reset Text Size
+        </button>
+        <button id="toggleDarkMode">
+          <i class="fas fa-moon"></i> Toggle Dark Mode
+        </button>
+        <button id="readAloud">
+          <i class="fas fa-volume-up"></i> Read Aloud
+        </button>
+        <button id="stopReading">
+          <i class="fas fa-stop"></i> Stop Reading
+        </button>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Google Translator
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "mr",
+            includedLanguages: "mr,en,hi",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+
+      // Visitor Counter
+      function updateVisitorCounter() {
+        if (localStorage.getItem("visits")) {
+          let visits = parseInt(localStorage.getItem("visits")) + 1;
+          localStorage.setItem("visits", visits);
+          document.getElementById("visitorCounter").innerText = visits;
+        } else {
+          localStorage.setItem("visits", 1);
+          document.getElementById("visitorCounter").innerText = 1;
+        }
+      }
+
+      // Counter Animation (slower version - 2-3 seconds)
+      function animateCounters() {
+        const counters = document.querySelectorAll(".counter");
+        const duration = 2500; // 2.5 seconds
+        const interval = 50; // update every 50ms
+
+        counters.forEach((counter) => {
+          const target = +counter.getAttribute("data-target");
+          const steps = duration / interval;
+          const increment = target / steps;
+          let current = 0;
+
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              counter.innerText = target;
+              clearInterval(timer);
+            } else {
+              counter.innerText = Math.floor(current);
+            }
+          }, interval);
+        });
+      }
+
+      // Gallery Modal
+      document.addEventListener("DOMContentLoaded", function () {
+        const galleryImages = document.querySelectorAll(".gallery-img");
+        const modalImage = document.getElementById("modalImage");
+        const modalCaption = document.getElementById("modalCaption");
+        const imageModal = new bootstrap.Modal(
+          document.getElementById("imageModal")
+        );
+
+        galleryImages.forEach((image) => {
+          image.addEventListener("click", function () {
+            modalImage.src = this.src;
+            modalCaption.textContent = this.getAttribute("data-caption");
+            imageModal.show();
+          });
+        });
+
+        // See more button
+        document
+          .getElementById("seeMoreBtn")
+          .addEventListener("click", function () {
+            document.getElementById("moreImages").classList.toggle("d-none");
+            this.textContent =
+              this.textContent === "See More" ? "See Less" : "See More";
+          });
+
+        // Initialize counters
+        updateVisitorCounter();
+
+        // Start counter animation when in viewport
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animateCounters();
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        observer.observe(document.querySelector(".counter"));
+
+        // Accessibility Panel Toggle
+        document
+          .getElementById("gigwButton")
+          .addEventListener("click", function () {
+            const panel = document.getElementById("accessibilityPanel");
+            panel.style.display =
+              panel.style.display === "block" ? "none" : "block";
+          });
+
+        // Text Size Controls
+        document
+          .getElementById("increaseText")
+          .addEventListener("click", function () {
+            document.body.classList.remove(
+              "text-small",
+              "text-large",
+              "text-xlarge"
+            );
+            if (document.body.classList.contains("text-large")) {
+              document.body.classList.remove("text-large");
+              document.body.classList.add("text-xlarge");
+            } else if (document.body.classList.contains("text-xlarge")) {
+              // Already at maximum
+            } else {
+              document.body.classList.add("text-large");
+            }
+          });
+
+        document
+          .getElementById("decreaseText")
+          .addEventListener("click", function () {
+            document.body.classList.remove(
+              "text-small",
+              "text-large",
+              "text-xlarge"
+            );
+            if (document.body.classList.contains("text-large")) {
+              document.body.classList.remove("text-large");
+            } else if (document.body.classList.contains("text-xlarge")) {
+              document.body.classList.remove("text-xlarge");
+              document.body.classList.add("text-large");
+            } else {
+              document.body.classList.add("text-small");
+            }
+          });
+
+        document
+          .getElementById("resetText")
+          .addEventListener("click", function () {
+            document.body.classList.remove(
+              "text-small",
+              "text-large",
+              "text-xlarge"
+            );
+          });
+
+        // Dark Mode Toggle
+        document
+          .getElementById("toggleDarkMode")
+          .addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+          });
+
+        // Text-to-Speech Functionality
+        let speechSynthesis = window.speechSynthesis;
+        let speechUtterance = null;
+
+        document
+          .getElementById("readAloud")
+          .addEventListener("click", function () {
+            // Get all text content from the main content area
+            const mainContent = document.querySelector(".container.mt-4");
+            const text = mainContent.textContent.replace(/\s+/g, " ").trim();
+
+            // Stop any ongoing speech
+            if (speechSynthesis.speaking) {
+              speechSynthesis.cancel();
+            }
+
+            // Create speech utterance
+            speechUtterance = new SpeechSynthesisUtterance(text);
+            speechUtterance.lang = "mr-IN"; // Marathi language
+            speechUtterance.rate = 0.9; // Slightly slower pace
+
+            // Start speaking
+            speechSynthesis.speak(speechUtterance);
+          });
+
+        document
+          .getElementById("stopReading")
+          .addEventListener("click", function () {
+            if (speechSynthesis.speaking) {
+              speechSynthesis.cancel();
+            }
+          });
+      });
+
+      // Improved carousel animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector("#mainCarousel");
+        carousel.addEventListener("slide.bs.carousel", (event) => {
+          // Add any custom animation here if needed
+        });
+      });
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

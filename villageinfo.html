@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>बोरगाव - गावाची माहिती</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/villageinfo.css">
+  </head>
+   <link rel="stylesheet" href="index.css">
+  <body>
+    <!-- Google Translator -->
+    <div class="google-translator">
+      <div id="google_translate_element"></div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            महाराष्ट्र शासन | GOVERNMENT OF MAHARASHTRA
+          </div>
+          <div class="col-md-6 text-end">
+            <i class="fas fa-envelope"></i><a href="mailto:borgaon183740@gmail.com">borgaon183740@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo Header -->
+ <div class="logo-header py-2">
+      <div class="container d-flex align-items-center">
+        <img src="img/main_logo.png" alt="ग्रामपंचायत लोगो" class="logo me-3" />
+
+        <h2 class="mb-0 marathi-font"></h2>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bar">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                ><i class="fas fa-home"></i> मुखपृष्ठ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="members.html"
+                ><i class="fas fa-users"></i> पदाधिकारी</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="villageinfo.html"
+                ><i class="fas fa-info-circle"></i> गावाची माहिती</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="impnumbers.html"
+                ><i class="fas fa-phone-alt"></i> महत्वाचे नंबर</a
+              >
+            </li>
+            <!-- New Dropdown Menu -->
+                        <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="yojna.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                onclick="window.location=this.getAttribute('href');"
+              >
+                <i class="fas fa-project-diagram"></i> शासकीय योजना
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-custom"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="yojna.html"
+                    >१५ वित्त आयोग</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="jaljeevan.html"
+                    >जल जीवन मिशन</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="pmawas.html"
+                    >प्रधान मंत्री आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="nrega.html"
+                    >महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार हमी योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="tanda_vasti.html"
+                    >तांडा/वस्ती योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="sc_st_development.html"
+                    >अनुसूचीत जाती व नवबौध्द विकास</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="ramaiawas.html"
+                    >रमाई आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="shabriawas.html"
+                    >शबरी आदिवासी घरकुल योजना</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- लाभार्थी रजिस्टर Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="beneficiaryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user-check"></i> लाभार्थी रजिस्टर
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-custom"
+                aria-labelledby="beneficiaryDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="pm_awas.html"
+                    >प्रधानमंत्री आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="shabri_awas.html"
+                    >शबरी आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="ramai_awas.html"
+                    >रमाई आवास योजना</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services-for-citizens.html"
+                ><i class="fas fa-user-check"></i> नागरिकांसाठी सेवा</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="tax-collection.html"
+                ><i class="fas fa-money-bill-wave"></i> कर संकलन</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="complain-us.html"
+                ><i class="fas fa-comments"></i> तक्रार द्या</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <div class="container">
+        <marquee behavior="scroll" direction="left">
+          <i class="fas fa-bullhorn"></i> ग्रामपंचायत मध्ये स्वच्छता अभियान चालू
+          आहे. सर्व नागरिकांनी सहभागी व्हावे.
+        </marquee>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <!-- Notification -->
+      <div class="notification">
+       <hi><i class="fas fa-exclamation-circle red-icon"></i></hi>
+
+        <strong>महत्वाची सूचना :</strong> नवीन जन्म नोंदणी प्रक्रिया ऑनलाईन सुरू
+        झाली आहे.
+      </div>
+
+      <h1 class="section-title">बोरगाव गावाची माहिती</h1>
+
+      <div class="section">
+        <h2 class="section-title">गावाचा इतिहास</h2>
+        <p>
+          बोरगाव, महाराष्ट्राच्या नाशिक जिल्ह्यातील सुरगाणा तालुक्यात वसलेले एक
+          महत्त्वपूर्ण गाव आहे. हे गाव बोरगाव ग्रामपंचायतीचे मुख्यालय आहे,
+          ज्यामध्ये बोरगावसह हिरडीपाडा, चिखली, आणि खरुदे या गावांचा समावेश आहे.
+          नाशिक जिल्हा मुख्यालयापासून सुमारे ९० किलोमीटर अंतरावर असलेले हे गाव
+          आदिवासीबहुल भागातील विकास आणि प्रशासनाचे एक केंद्र आहे. बोरगाव आणि
+          परिसरातील लोकसंख्या प्रामुख्याने आदिवासी समाजाची आहे. यामध्ये कोकणा,
+          वारली, आणि महादेव कोळी या जमातींचा मोठ्या प्रमाणावर समावेश आहे. येथील
+          रहिवाशांची मुख्य भाषा मराठी असली तरी, दैनंदिन व्यवहारात डांगी आणि
+          कोकणी या बोलीभाषांचा वापर अधिक केला जातो. या भागातील संस्कृती ही
+          निसर्गाशी जवळून जोडलेली असून, पारंपारिक सण आणि उत्सव मोठ्या उत्साहात
+          साजरे केले जातात.
+        </p>
+
+        <p>
+          ग्रामपंचायत सौंदर्य माहिती : बोरगाव हे आदिवासी पट्ट्यात आणि
+          सह्याद्रीच्या डोंगररांगांमध्ये वसलेले असल्यामुळे, इथले निसर्गसौंदर्य
+          खूप आल्हाददायक आहे. विशेषतः पावसाळ्यात हा परिसर हिरवागार होतो आणि
+          डोंगरांमधून अनेक छोटे-मोठे धबधबे दिसतात.
+        </p>
+        <p>
+          बोरगाव, तालुका सुरगाणा, जिल्हा नाशिक बोरगाव हे गाव महाराष्ट्र
+          राज्यातील नाशिक जिल्ह्यात सुरगाणा तालुक्यातील एक गाव आहे. हे जिल्हा
+          मुख्यालय नाशिकपासून सुमारे ९० किमी अंतरावर आणि तालुका मुख्यालय सुरगाणा
+          पासून सुमारे १५-१८ किमी अंतरावर आहे. प्रशासकीय दृष्ट्या बोरगाव हे
+          स्वतःचे ग्रामपंचायत केंद्र आहे. पोस्टल सेवा: बोरगाव गावाचा पिन कोड
+          ४२२२११ आहे. या गावासाठीची पोस्टल सेवा सुरगाणा सब ऑफिस (S.O.) द्वारे
+          पुरवली जाते. जवळची गावे: या गावाच्या आसपासची काही महत्त्वाची गावे
+          पोहाळी (Pohali), हतगड (Hatgad), मोहपाडा (Mohpada), सरड (Sarad),
+          उंबरपाडा दिगर (Umbarpada Digar) घोडांबे (Ghodambe) आणि साजोळे (Sajole)
+          आहेत. जवळची मोठी शहरे: बोरगाव गावापासून नाशिक, मालेगाव, कळवण आणि सटाणा
+          ही मोठी शहरे जवळ आहेत
+        </p>
+      </div>
+
+ <div class="container my-5">
+  
+  <div class="card shadow-lg border-0 rounded-3 mb-4">
+    <div class="card-header bg-success text-white text-center fs-4 fw-bold">
+      🌿 ग्रामपंचायतीची सर्वसाधारण माहिती
+    </div>
+    <div class="card-body">
+      <p><strong>ग्रामपंचायत नाव:</strong> बोरगाव</p>
+      <p><strong> जिल्हा मुख्यालयापासून अंतर:</strong> ~90 किमी</p>
+      <p><strong> तालुक्यापासून अंतर:</strong> ~15-18 किमी (सुरगाणा)</p>
+      <p>
+        <strong> जवळची गावे:</strong> पोहाळी, हतगड, मोहपाडा, सरड, उंबरपाडा,
+        दिगर, घोडांबे, साजोळे
+      </p>
+      <p><strong>जवळची शहरे:</strong> नाशिक, मालेगाव, कळवण, सटाणा</p>
+      <p><strong> तालुका:</strong> सुरगाणा</p>
+      <p><strong>जिल्हा:</strong> नाशिक</p>
+      <p><strong> पिन कोड:</strong> 422211</p>
+      <p><strong> स्थान:</strong> 20.509311, 73.754630</p>
+      <p><strong> लोकसंख्या:</strong> 5067 (पुरुष: 2588, महिला: 2479)</p>
+      <p><strong>कुटुंब संख्या:</strong> 1042</p>
+      <p><strong> क्षेत्रफळ:</strong> 2332.74 हेक्टर</p>
+      <p><strong> वार्ड संख्या:</strong> 5</p>
+      <p><strong> ईमेल आयडी:</strong> <a href="mailto:borgaon183740@gmail.com">borgaon183740@gmail.com</a></p>
+      <p><strong> मोबाईल नंबर:</strong> <a href="tel:9022702596">9022702596</a></p>
+    </div>
+  </div>
+
+  <!-- लोकसंख्या -->
+  <div class="card shadow-sm border-0 rounded-3 mb-4">
+    <div class="card-header bg-primary text-white fs-5 fw-bold">
+      👥 लोकसंख्या
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>तपशील</th>
+              <th>पुरुष</th>
+              <th>स्त्रिया</th>
+              <th>एकूण</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>एकुण लोकसंख्या</b></td>
+              <td>2588</td>
+              <td>2479</td>
+              <td class="fw-bold">5067</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- घनकचरा व्यवस्थापन -->
+  <div class="container my-5">
+
+  <!-- ग्रामीण पाणीपुरवठा योजना -->
+  <div class="card shadow-lg border-0 rounded-3 mb-5">
+    <div class="card-header bg-gradient bg-warning text-dark text-center fs-4 fw-bold">
+      💧 ग्रामीण पाणीपुरवठा योजनेची माहिती
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr><th> योजनेचे नाव</th><td>भारत निर्माण योजना</td></tr>
+            <tr><th> योजना मंजुर वर्ष</th><td>सन 2009/2010</td></tr>
+            <tr><th> योजना कार्यान्वित वर्ष</th><td>सन 2011/2012</td></tr>
+            <tr><th> योजनेची अंदाजपत्रकिय रक्कम</th><td>2,34,46,595/-</td></tr>
+            <tr><th> योजनेवर झालेला खर्च</th><td>2,10,98,061/-</td></tr>
+            <tr><th> पाण्याचा स्त्रोत</th><td>मुकणे धरण</td></tr>
+            <tr><th> मुकणे धरण ते टाकी अंतर</th><td>1900 मीटर</td></tr>
+            <tr><th> पाण्याच्या टाकीची क्षमता</th><td>2 लाख लिटर</td></tr>
+            <tr><th> वैयक्तिक नळ जोडणी</th><td>687</td></tr>
+            <tr><th> पाणी मिटर जोडणी</th><td>687</td></tr>
+            <tr><th> सार्वजनिक नळ जोडणी</th><td>00</td></tr>
+            <tr><th> जलशुध्दीकरण केंद्र क्षमता</th><td>10 लाख लिटर</td></tr>
+            <tr><th> प्रति दिन पाणी पुरवठा</th><td>दिवसातुन 2 वेळेस</td></tr>
+            <tr><th> प्रति व्यक्ती पुरवठा</th><td>60 लिटर / माणसी</td></tr>
+            <tr><th> प्रतिमहा अॅलम</th><td>सरासरी 120 किलो</td></tr>
+            <tr><th> प्रतिमहा क्लोरीन</th><td>सरासरी 8 ते 10 किलो</td></tr>
+            <tr><th> वैयक्तिक पाणीपट्टी आकार</th><td>1200 रुपये प्रति वर्ष</td></tr>
+            <tr><th> पाणीपट्टी वसुल कालावधी</th><td>वार्षिक</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+ <div class="card shadow-lg border-0 rounded-3 mb-5">
+  <div class="card-header bg-gradient bg-success text-white fs-4 fw-bold text-center">
+    🏡 गावातील सुविधा
+  </div>
+  <div class="card-body">
+    <div class="row g-4">
+      
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-success"> पाणी</h5>
+          <p>"हर घर जल, हर घर नल" योजनेतून नळ कनेक्शन</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-danger"> आरोग्य</h5>
+          <p>प्राथमिक आरोग्य केंद्र, उपकेंद्र व खाजगी दवाखाने</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-primary"> पिण्याचे पाणी</h5>
+          <p>खाजगी RO ATM सुविधा</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-info"> हवामान माहिती</h5>
+          <p>मोबाईलवर उपलब्ध</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-warning">शिक्षण</h5>
+          <p>
+            प्राथमिक शाळा (१ ते ४ वी) – जिल्हा परिषद शाळा <br>
+            उच्च माध्यमिक शाळा (५ ते १२ वी) – डी.पी. विद्यालय बोरगाव
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-pink"> महिला व बालकल्याण</h5>
+          <p>अंगणवाडी केंद्र – ५</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-secondary"> दूरसंचार</h5>
+          <p>इंटरनेट सुविधा उपलब्ध</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-dark"> सामाजिक सभामंडप</h5>
+          <p>३ (विवाह, वर्षश्राद्ध, धार्मिक विधी)</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- About Section -->
+      <div class="col-md-4 mb-4">
+        <h5>ग्रामपंचायतीची माहिती</h5>
+        <p>
+          नाव: बोरगाव <br>
+          स्थापना: 02 ऑक्टोबर 1959 <br>
+          Email: borgaon183740@gmail.com <br>
+          सेन्सस कोड: 549697 <br>
+          तालुका पासून अंतर: 18 कि.मी. <br>
+          जिल्हा मुख्यालयापासून अंतर: 82 कि.मी.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5>द्रुत लिंक</h5>
+        <div class="quick-links">
+          <a href="index.html"><i class="fas fa-angle-right"></i> मुख्य पृष्ठ</a>
+          <a href="#"><i class="fas fa-angle-right"></i> ग्रामपंचायती विषयी</a>
+          <a href="#"><i class="fas fa-angle-right"></i> आर्थिक माहिती</a>
+          <a href="#"><i class="fas fa-angle-right"></i> योजना व कामे</a>
+          <a href="#"><i class="fas fa-angle-right"></i> ऑनलाइन सेवा</a>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4">
+        <h5>संपर्क</h5>
+        <p><i class="fas fa-map-marker-alt"></i> ग्रामपंचायत बोरगाव, ता. सुरगाणा, जि. नाशिक, पिन: 422211</p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:borgaon183740@gmail.com">borgaon183740@gmail.com</a></p>
+        <p><i class="fas fa-phone-alt"></i><a href="tel:+91 9022702596">9022702596</a></p>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <!-- Copyright -->
+    <div class="row">
+        <div class="col text-center">
+         <p class="mb-0">
+      © 2025 बोरगाव ग्रामपंचायत. सर्व हक्क राखीव. <br>
+      Design & Developed by 
+      <a href="https://kumiradiinfotech.com/">KUMIRADI INFOTECH</a>.
+    </p>
+    <!-- Horizontal line below the link -->
+    <hr style="border: 1px solid rgba(255, 255, 255, 0.3); width: 80%; margin: 10px auto;">
+  </div>
+</div>
+
+  </div>
+</footer>
+
+      <!-- GIGW Compliance Button -->
+      <div class="gigw-compliance" id="gigwButton">
+        <i class="fas fa-universal-access"></i>
+      </div>
+
+      <!-- Accessibility Panel -->
+      <div class="accessibility-panel" id="accessibilityPanel">
+        <button id="increaseText">
+          <i class="fas fa-text-height"></i> Increase Text Size
+        </button>
+        <button id="decreaseText">
+          <i class="fas fa-text-height"></i> Decrease Text Size
+        </button>
+        <button id="resetText">
+          <i class="fas fa-undo"></i> Reset Text Size
+        </button>
+        <button id="toggleDarkMode">
+          <i class="fas fa-moon"></i> Toggle Dark Mode
+        </button>
+        <button id="readAloud">
+          <i class="fas fa-volume-up"></i> Read Aloud
+        </button>
+        <button id="stopReading">
+          <i class="fas fa-stop"></i> Stop Reading
+        </button>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Google Translator
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "mr",
+            includedLanguages: "mr,en,hi",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+
+      // Visitor Counter
+      function updateVisitorCounter() {
+        if (localStorage.getItem("visits")) {
+          let visits = parseInt(localStorage.getItem("visits")) + 1;
+          localStorage.setItem("visits", visits);
+          document.getElementById("visitorCounter").innerText = visits;
+        } else {
+          localStorage.setItem("visits", 1);
+          document.getElementById("visitorCounter").innerText = 1;
+        }
+      }
+
+      // Accessibility Panel Toggle
+      document
+        .getElementById("gigwButton")
+        .addEventListener("click", function () {
+          const panel = document.getElementById("accessibilityPanel");
+          panel.style.display =
+            panel.style.display === "block" ? "none" : "block";
+        });
+
+      // Text Size Controls
+      document
+        .getElementById("increaseText")
+        .addEventListener("click", function () {
+          document.body.classList.remove(
+            "text-small",
+            "text-large",
+            "text-xlarge"
+          );
+          if (document.body.classList.contains("text-large")) {
+            document.body.classList.remove("text-large");
+            document.body.classList.add("text-xlarge");
+          } else if (document.body.classList.contains("text-xlarge")) {
+            // Already at maximum
+          } else {
+            document.body.classList.add("text-large");
+          }
+        });
+
+      document
+        .getElementById("decreaseText")
+        .addEventListener("click", function () {
+          document.body.classList.remove(
+            "text-small",
+            "text-large",
+            "text-xlarge"
+          );
+          if (document.body.classList.contains("text-large")) {
+            document.body.classList.remove("text-large");
+          } else if (document.body.classList.contains("text-xlarge")) {
+            document.body.classList.remove("text-xlarge");
+            document.body.classList.add("text-large");
+          } else {
+            document.body.classList.add("text-small");
+          }
+        });
+
+      document
+        .getElementById("resetText")
+        .addEventListener("click", function () {
+          document.body.classList.remove(
+            "text-small",
+            "text-large",
+            "text-xlarge"
+          );
+        });
+
+      // Dark Mode Toggle
+      document
+        .getElementById("toggleDarkMode")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("dark-mode");
+        });
+
+      // Text-to-Speech Functionality
+      let speechSynthesis = window.speechSynthesis;
+      let speechUtterance = null;
+
+      document
+        .getElementById("readAloud")
+        .addEventListener("click", function () {
+          // Get all text content from the main content area
+          const mainContent = document.querySelector(".container.mt-4");
+          const text = mainContent.textContent.replace(/\s+/g, " ").trim();
+
+          // Stop any ongoing speech
+          if (speechSynthesis.speaking) {
+            speechSynthesis.cancel();
+          }
+
+          // Create speech utterance
+          speechUtterance = new SpeechSynthesisUtterance(text);
+          speechUtterance.lang = "mr-IN"; // Marathi language
+          speechUtterance.rate = 0.9; // Slightly slower pace
+
+          // Start speaking
+          speechSynthesis.speak(speechUtterance);
+        });
+
+      document
+        .getElementById("stopReading")
+        .addEventListener("click", function () {
+          if (speechSynthesis.speaking) {
+            speechSynthesis.cancel();
+          }
+        });
+
+      // Improved carousel animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector("#mainCarousel");
+        carousel.addEventListener("slide.bs.carousel", (event) => {
+          // Add any custom animation here if needed
+        });
+      });
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
