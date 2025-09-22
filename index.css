@@ -414,8 +414,6 @@ body {
 
 .accessibility-panel {
   position: fixed;
-  bottom: 70px;
-  right: 20px;
   background-color: #0d1140;
   color: white;
   padding: 15px;
@@ -423,6 +421,9 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 999;
   display: none;
+  bottom: 70px;
+  left: 20px;   /* instead of right */
+  right: auto;
 }
 
 .accessibility-panel button {
@@ -436,6 +437,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s;
+  float: right;
+  margin-left: 10px;
 }
 
 .accessibility-panel button:hover {

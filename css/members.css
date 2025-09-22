@@ -12,7 +12,7 @@ body {
         padding: 8px 0;
         font-size: 14px;
       }
- .logo-header {
+.logo-header {
   background: linear-gradient(90deg, #ffffff, #ffffff);
   color: #ffffff;
   border-radius: 12px;
@@ -26,36 +26,42 @@ body {
   padding: 15px;
   margin-top: 2px;
   margin-bottom: 2px;
-}
-
-      .logo-header {
-  background: linear-gradient(90deg, #ffffff, #ffffff);
-  color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(219, 219, 219, 0.2);
-  transition: all 0.3s ease;
-  margin: 10px auto;  
-  display: flex;      
-  flex-direction: column; 
-  align-items: center;
-  justify-content: center; 
-  padding: 15px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-
 }
 
 .logo {
   height: 95px;          
-  width: 1000px;           
+  width: 253px;           
   object-fit: contain;   
   border-radius: 8px;   
   border: 2px solid #ffffff;
   transition: transform 0.3s ease;
-  margin-bottom: 10px; 
-  max-width: 150px;  
-  height: auto;  
+  margin-bottom: 10px;   
 }
+
+.logo:hover {
+  transform: scale(1.1); 
+}
+
+
+.logo-text h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #070202;
+  text-align: center; 
+}
+
+.logo-text p {
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.logo-header:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(205, 15, 15, 0.3);
+}
+
 
       .blogo {
         height: 120px;
