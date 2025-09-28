@@ -202,6 +202,7 @@ body {
 /* Social icons */
 .footer .social-icons {
   margin-top: 20px;
+  
 }
 
 .footer .social-icons a {
@@ -220,6 +221,7 @@ body {
 .footer .social-icons a:hover {
   background-color: #ff6f61;
   color: #fff;
+  
   transform: scale(1.2);
 }
 
@@ -263,6 +265,7 @@ body {
 
   .footer .social-icons {
     justify-content: center;
+   
   }
 
   .footer .quick-links a {
@@ -270,8 +273,6 @@ body {
     margin: 5px 10px;
   }
 }
-
-
 
 .notification {
   background-color: #fff8e1;
@@ -288,11 +289,12 @@ body {
  .social-icons img {
       width: 40px;
       height: 40px;
-      margin: 5px;
       transition: transform 0.3s;
+      border-radius: 20px;
     }
     .social-icons img:hover {
       transform: scale(1.4);
+      border-radius: 20px;
     }
 
 .marquee {
