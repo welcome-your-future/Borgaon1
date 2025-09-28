@@ -920,25 +920,6 @@
     </div>
   </div>
 </div>
-<script>
-  const searchInput = document.getElementById('searchInput');
-  const contactCards = document.querySelectorAll('.col-md-3'); // ✅ इथे बदल
-
-  searchInput.addEventListener('keyup', function () {
-    const filter = searchInput.value.toLowerCase();
-
-    contactCards.forEach(card => {
-      const stationName = card.querySelector('.contact-card-header').textContent.toLowerCase();
-      const phoneNumber = card.querySelector('.contact-number').textContent.toLowerCase();
-
-      if (stationName.includes(filter) || phoneNumber.includes(filter)) {
-        card.style.display = '';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  });
-  </script
 
  <!-- Footer -->
 <footer class="footer">
