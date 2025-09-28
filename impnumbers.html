@@ -248,6 +248,15 @@
 
   <h1 class="section-title">महत्त्वाचे संपर्क क्रमांक</h1>
 
+  <!-- 🔍 Search Box -->
+<div class="mb-3">
+  <input
+    type="text"
+    id="searchInput"
+    class="form-control"
+    placeholder="पोलिस स्टेशन नाव किंवा नंबर टाका..."
+  />
+</div>
       <!-- Police Stations Section -->
       <div class="row">
         <div class="col-md-3">
@@ -742,7 +751,28 @@
           </div>
         </div>
       </div>
+      
+      <script>
+        const searchInput = document.getElementById('searchInput');
+        const contactCards = document.querySelectorAll('.col-md-3'); 
+      
+        searchInput.addEventListener('keyup', function () {
+          const filter = searchInput.value.toLowerCase();
+      
+          contactCards.forEach(card => {
+            const stationName = card.querySelector('.contact-card-header').textContent.toLowerCase();
+            const phoneNumber = card.querySelector('.contact-number').textContent.toLowerCase();
+      
+            if (stationName.includes(filter) || phoneNumber.includes(filter)) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
       </script>
+      
+
       
 
       
@@ -890,7 +920,25 @@
     </div>
   </div>
 </div>
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const contactCards = document.querySelectorAll('.col-md-3'); // ✅ इथे बदल
 
+  searchInput.addEventListener('keyup', function () {
+    const filter = searchInput.value.toLowerCase();
+
+    contactCards.forEach(card => {
+      const stationName = card.querySelector('.contact-card-header').textContent.toLowerCase();
+      const phoneNumber = card.querySelector('.contact-number').textContent.toLowerCase();
+
+      if (stationName.includes(filter) || phoneNumber.includes(filter)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+  </script
 
  <!-- Footer -->
 <footer class="footer">
